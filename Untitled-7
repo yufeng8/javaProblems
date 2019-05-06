@@ -1,0 +1,10 @@
+int x = 1;
+int y = x;
+x = 2;
+System.out.println(y); // ==> 1
+
+int[] x = new int[1];
+x[0] = 1;
+int[] y = x;
+x[0] = 2;
+System.out.println(y[0]); // ==> 2

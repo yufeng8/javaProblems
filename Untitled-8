@@ -1,0 +1,33 @@
+Map<Key, Value> cache;
+Map<Key, Integer> freqs;
+Map<Integer, LinkedHashSet<Key>> buckets;
+int minFreq;
+
+void set(Key key, Value value) {
+    if (!cache.contains(key)) {
+        if (!buckets.contains(1)) {
+            buckets.put(1, new HashSet());
+        }
+        buckets.get(1).add(key);
+        minFreq = 1;
+        freqs.set(key, 1);
+    }
+    cache.put(key, value);
+}
+
+arr[row][col]
+
+row = y
+col = x
+
+arr[y][x]
+
+void f() {
+    int res = 0;
+    g(res);
+
+}
+
+void g(int res) {
+    res++;
+}
